@@ -36,7 +36,7 @@ To run the script and observe the results of Grover's algorithm:
 python grover_algorithm.py
 
 Script Details
-Define the Oracle: Modify the oracle to mark the desired target state. By default, it marks the state |11...1>.
+Define the Oracle: Modify the oracle to mark the desired target state. 
 Circuit Initialization: Applies Hadamard gates to create a superposition state.
 Grover's Diffusion Operator: Iteratively amplifies the target state's amplitude.
 Measurement and Simulation: Runs the circuit on a simulator and outputs the measurement results, highlighting the solution state.
