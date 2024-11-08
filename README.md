@@ -15,3 +15,42 @@ Project Structure
 grover_algorithm.py: The main script for constructing and running the quantum circuit.
 README.md: Project overview, installation, usage, and references.
 requirements.txt: List of dependencies for the project.
+
+Installation
+To set up the project locally, follow these steps:
+
+Clone the repository:
+
+git clone https://github.com/your-username/grover-algorithm.git
+cd grover-algorithm
+
+
+Install the dependencies:
+pip install -r requirements.txt
+
+Install Qiskit if not already installed:
+pip install qiskit
+Usage
+
+To run the script and observe the results of Grover's algorithm:
+python grover_algorithm.py
+
+Script Details
+Define the Oracle: Modify the oracle to mark the desired target state. By default, it marks the state |11...1>.
+Circuit Initialization: Applies Hadamard gates to create a superposition state.
+Grover's Diffusion Operator: Iteratively amplifies the target state's amplitude.
+Measurement and Simulation: Runs the circuit on a simulator and outputs the measurement results, highlighting the solution state.
+
+Example
+Below is an example output that illustrates the probability distribution where the target state is more likely to be measured.
+
+
+Measurement Results:
+{'110': 1, '111': 1000}  # Example result showing target state with higher probability
+
+References
+Qiskit Documentation: [https://learning.quantum.ibm.com/tutorial/grovers-algorithm](https://docs.quantum.ibm.com/guides)
+Grover's Algorithm: https://www.quantum-inspire.com/kbase/grover-algorithm/
+Qiskit Textbook on Grover's Algorithm: https://learning.quantum.ibm.com/tutorial/grovers-algorithm
+
+
